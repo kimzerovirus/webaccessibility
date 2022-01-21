@@ -241,7 +241,6 @@ table {
 }
 #intro .inner .wrap {
   width: 100%;
-  display: flex;
 }
 #intro .inner .wrap article {
   width: 580px;
@@ -255,13 +254,13 @@ table {
   color: #fff;
   text-align: right;
   letter-spacing: 0.5rem;
-  font-size: 42px;
+  font-size: 60px;
   position: relative;
 }
 #intro .inner .wrap article h1::after {
   content: "";
   display: block;
-  width: 50px;
+  width: 60px;
   height: 5px;
   background-color: #f9b437;
   position: absolute;
@@ -271,7 +270,8 @@ table {
 #intro .inner .wrap article p {
   color: #aaa;
   width: 420px;
-  line-height: 1.5rem;
+  font-size: 18px;
+  line-height: 1.5em;
 }
 
 /*experience -----------------------------------------------*/
@@ -586,6 +586,35 @@ table {
     width: 100%;
   }
 
+  /*intro -----------------------------------------------*/
+  #intro {
+    padding: 100px 30px;
+  }
+  #intro .inner {
+    width: 100%;
+  }
+  #intro .inner .wrap {
+    width: 100%;
+  }
+  #intro .inner .wrap article {
+    width: 100%;
+    margin: 0;
+  }
+  #intro .inner .wrap article h1 {
+    text-align: center;
+  }
+  #intro .inner .wrap article h1::after {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+  }
+  #intro .inner .wrap article p {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 80%;
+    text-align: center;
+  }
+
   /*experience -----------------------------------------------*/
   #experience {
     padding: 100px 30px;
@@ -660,6 +689,23 @@ table {
   }
   #visual .inner h1 {
     font: normal 12vmin/1 "Roboto";
+  }
+
+  /*intro -----------------------------------------------*/
+  #intro {
+    padding: 100px 30px;
+  }
+  #intro .inner .wrap article h1 {
+    font-size: 20px;
+    letter-spacing: 0.3rem;
+  }
+  #intro .inner .wrap article h1::after {
+    width: 30px;
+    height: 2px;
+  }
+  #intro .inner .wrap article p {
+    margin-top: 20px;
+    font-size: 14px;
   }
 
   /*experience -----------------------------------------------*/
