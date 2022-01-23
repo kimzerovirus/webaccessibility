@@ -93,7 +93,7 @@ table {
   height: 20px;
   position: absolute;
   right: 30px;
-  top: 50%;
+  top: 65px;
   transform: translateY(-50%);
 }
 #header .inner .btnCall::before {
@@ -101,7 +101,7 @@ table {
   display: block;
   width: 100%;
   height: 2px;
-  background: #000;
+  background: #fff;
   position: absolute;
   top: 0;
   left: 0;
@@ -112,7 +112,7 @@ table {
   display: block;
   width: 100%;
   height: 2px;
-  background: #000;
+  background: #fff;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -122,7 +122,7 @@ table {
   display: block;
   width: 100%;
   height: 2px;
-  background: #000;
+  background: #fff;
   position: absolute;
   top: 50%;
   margin-top: -1px;
@@ -287,9 +287,22 @@ table {
 }
 #experience .inner h1 {
   font-weight: bold;
-  font-size: 24px;
+  font-size: 36px;
   font-family: "Roboto", "Nanum Gothic", sans-serif;
   color: #fff;
+  text-align: center;
+  margin-bottom: 16px;
+}
+@media screen and (max-width: 539px) {
+  #experience .inner h1 {
+    font-size: 24px;
+  }
+}
+#experience .inner h2 {
+  font-weight: normal;
+  font-size: 12px;
+  font-family: "Roboto", "Nanum Gothic", sans-serif;
+  color: #aaa;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -306,8 +319,9 @@ table {
 }
 #experience .inner .wrap article .pic {
   width: 100%;
-  height: 120px;
+  height: 160px;
   overflow: hidden;
+  margin-bottom: 14px;
 }
 #experience .inner .wrap article .pic img {
   width: 100%;
@@ -318,10 +332,10 @@ table {
 #experience .inner .wrap article .pic:hover img {
   transform: scale(1.2);
 }
-#experience .inner .wrap article h2 {
+#experience .inner .wrap article h3 {
   margin-bottom: 10px;
 }
-#experience .inner .wrap article h2 a {
+#experience .inner .wrap article h3 a {
   font: bold 16px/1 "Roboto";
   color: #fff;
 }
@@ -330,174 +344,100 @@ table {
   color: #aaa;
 }
 
-/*brand -----------------------------------------*/
-#brand {
+/*info -----------------------------------------*/
+#info {
   width: 100%;
   padding: 200px 0;
-  background: #eee;
+  background: #000;
 }
-#brand .inner {
+#info .inner {
   width: 1180px;
   margin: 0 auto;
   position: relative;
 }
-#brand .inner h1 {
-  font-weight: bold;
-  font-size: 24px;
-  font-family: "Roboto", "Nanum Gothic", sans-serif;
+#info .inner article img {
+  width: 100%;
+}
+#info .inner article div {
+  position: absolute;
+  right: 80px;
+  bottom: -50px;
+  width: 500px;
+  background: #111;
+  box-sizing: border-box;
+  padding: 30px;
+}
+#info .inner article div h1 {
   color: #fff;
-  text-align: center;
-  margin-bottom: 50px;
+  letter-spacing: 0.2em;
+  font-size: 18px;
+  margin-bottom: 24px;
 }
-#brand .inner .wrap {
-  width: 100%;
-}
-#brand .inner .wrap article:nth-of-type(1) {
-  width: 380px;
-  height: 620px;
-  background: #444;
-  float: left;
-  margin-right: 20px;
-  padding: 170px 50px 0;
-  text-align: center;
-}
-#brand .inner .wrap article:nth-of-type(1) i {
-  font-size: 100px;
-  color: #fff;
-  margin-bottom: 20px;
-}
-#brand .inner .wrap article:nth-of-type(1) h2 {
-  font: bold 20px/1 "Roboto";
-  color: #fff;
-  margin-bottom: 30px;
-}
-#brand .inner .wrap article:nth-of-type(1) p {
-  font: 14px/1.3 "Roboto";
-  color: #999;
-  margin-bottom: 30px;
-}
-#brand .inner .wrap article:nth-of-type(1) a {
-  display: block;
-  width: 150px;
-  height: 30px;
-  font: 11px/30px "Roboto";
-  color: #ddd;
-  border: 1px solid #bbb;
-  margin: 0 auto;
-}
-#brand .inner .wrap article:nth-of-type(2) {
-  width: 380px;
-  height: 300px;
-  background: #444;
-  float: left;
-  margin-right: 20px;
-}
-#brand .inner .wrap article:nth-of-type(2) img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-#brand .inner .wrap article:nth-of-type(3) {
-  width: 380px;
-  height: 300px;
-  background: #444;
-  float: left;
-}
-#brand .inner .wrap article:nth-of-type(3) img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-#brand .inner .wrap article:nth-of-type(4) {
-  width: 780px;
-  height: 300px;
-  background: #444;
-  float: left;
-  margin-top: 20px;
-}
-#brand .inner .wrap article:nth-of-type(4) img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* banner ---------------------------------------------- */
-#banner {
-  width: 100%;
-  padding: 150px 0;
-  background: url(../img/banner.jpg) no-repeat center/cover fixed;
-}
-#banner .inner {
-  width: 1180px;
-  margin: 0 auto;
-}
-#banner .inner h1 {
-  font-weight: bold;
-  font-size: 30px;
-  font-family: "Roboto", "Nanum Gothic", sans-serif;
-  color: #fff;
-  text-align: center;
-  margin-bottom: 30px;
-}
-#banner .inner p {
-  font: 16px/1.3 "Roboto";
-  color: #bbb;
-  text-align: center;
-}
-
-/* comment -------------------------------------*/
-#comments {
-  width: 100%;
-  padding: 150px 0;
-  background: #ddd;
-}
-#comments .inner {
-  width: 1180px;
-  margin: 0 auto;
-}
-#comments .inner h1 {
-  font-weight: bold;
-  font-size: 24px;
-  font-family: "Roboto", "Nanum Gothic", sans-serif;
-  color: #fff;
-  text-align: center;
-  margin-bottom: 50px;
-}
-#comments .inner ul {
-  width: 100%;
-}
-#comments .inner ul li {
-  width: 100%;
-  margin-bottom: 20px;
-  border: 1px solid #111;
-  padding: 15px 20px;
-  transition: all 0.5s;
-}
-#comments .inner ul li::after {
+#info .inner article div h1::after {
   content: "";
+  width: 20px;
+  height: 2px;
   display: block;
-  clear: both;
+  background: #f9b437;
+  margin-top: 6px;
 }
-#comments .inner ul li a {
-  font: 12px/1 "Roboto";
-  color: #555;
-  float: left;
-  transition: 0.5s;
+#info .inner article div P {
+  font-size: 14px;
+  color: #aaa;
 }
-#comments .inner ul li span {
-  font: 12px/1 "Roboto";
-  color: #888;
-  float: right;
-  transition: 0.5s;
+
+#gallery {
+  width: 100%;
+  padding: 200px 0;
+  position: relative;
+  background: #000;
 }
-#comments .inner ul li:hover {
-  background: #444;
+#gallery .inner {
+  width: 1180px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
 }
-#comments .inner ul li:hover a {
+#gallery .inner .gallery-header div {
+  margin-bottom: 36px;
+}
+#gallery .inner .gallery-header div h1 {
+  font-size: 40px;
   color: #fff;
 }
-#comments .inner ul li:hover span {
-  color: #ddd;
+#gallery .inner .gallery-header div p {
+  color: #777;
+}
+#gallery .inner .gallery-header .btn-group .swiper-button-prev {
+  left: auto;
+  top: 30px;
+  right: 50px;
+}
+#gallery .inner .gallery-header .btn-group .swiper-button-next {
+  top: 30px;
+  right: 0;
+}
+#gallery .inner .gallery-header .btn-group .swiper-button-next,
+#gallery .inner .gallery-header .btn-group .swiper-button-prev {
+  color: #f9b437;
+}
+#gallery .inner #slide .swiper-wrapper {
+  width: 100%;
+  height: 200px;
+  margin: 0 auto;
+  position: relative;
+}
+#gallery .inner #slide .swiper-wrapper .swiper-slide {
+  width: 450px;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+#gallery .inner #slide .swiper-wrapper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*footer -------------------------------------------*/
@@ -634,42 +574,29 @@ table {
     height: 20vmax;
   }
 
-  /*brand -----------------------------------------*/
-  #brand {
+  /*info -------------------------------------------*/
+  #info {
     padding: 100px 30px;
   }
-  #brand .inner {
+  #info .inner {
     width: 100%;
   }
-  #brand .inner .wrap article:nth-of-type(1) {
-    width: 49%;
-    margin-right: 2%;
-  }
-  #brand .inner .wrap article:nth-of-type(2) {
-    width: 49%;
-    margin-right: 0px;
-    margin-bottom: 20px;
-  }
-  #brand .inner .wrap article:nth-of-type(3) {
-    width: 49%;
-  }
-  #brand .inner .wrap article:nth-of-type(4) {
+  #info .inner article div {
+    position: relative;
+    bottom: 0;
+    left: 0;
     width: 100%;
+    background-color: #000;
+    text-align: center;
+  }
+  #info .inner article div h1::after {
+    margin: 6px auto 0;
   }
 
-  /* banner ---------------------------------------------- */
-  #banner {
-    padding: 150px 30px;
-  }
-  #banner .inner {
-    width: 100%;
-  }
-
-  /* comment -------------------------------------*/
-  #comments {
+  #gallery {
     padding: 100px 30px;
   }
-  #comments .inner {
+  #gallery .inner {
     width: 100%;
   }
 
@@ -713,32 +640,44 @@ table {
     width: 100%;
     margin-right: 0%;
   }
-  /*brand -----------------------------------------*/
-  #brand .inner .wrap article:nth-of-type(1) {
-    width: 100%;
-    height: 400px;
-    padding: 50px;
-    margin-right: 0%;
-    margin-bottom: 20px;
+  #gallery {
+    padding: 100px 30px;
   }
-  #brand .inner .wrap article:nth-of-type(2) {
+  #gallery .inner {
     width: 100%;
   }
-  #brand .inner .wrap article:nth-of-type(3) {
-    width: 100%;
+  #gallery .inner .gallery-header div {
+    margin-bottom: 36px;
   }
-  #brand .inner .wrap article:nth-of-type(4) {
-    width: 100%;
+  #gallery .inner .gallery-header div h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 8px;
   }
-
-  /* banner ---------------------------------------------- */
-  #banner {
-    padding: 120px 30px;
+  #gallery .inner .gallery-header div p {
+    font-size: 14px;
+    text-align: center;
   }
-
-  /* comment -------------------------------------*/
-  #comments .inner ul li a {
-    margin-bottom: 20px;
+  #gallery .inner .gallery-header .btn-group {
+    position: relative;
+    top: 80px;
+  }
+  #gallery .inner .gallery-header .btn-group .swiper-button-prev {
+    left: 0;
+    top: 0;
+  }
+  #gallery .inner .gallery-header .btn-group .swiper-button-prev::after {
+    font-size: 24px;
+  }
+  #gallery .inner .gallery-header .btn-group .swiper-button-next {
+    top: 0;
+    right: 0;
+  }
+  #gallery .inner .gallery-header .btn-group .swiper-button-next::after {
+    font-size: 24px;
+  }
+  #gallery .inner #slide {
+    height: 160px;
   }
 
   /*footer -------------------------------------------*/
